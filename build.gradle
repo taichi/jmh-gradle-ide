@@ -21,6 +21,8 @@ tasks.jmh.main = 'example.benchmark.HelloBenchmark'
 
 jmhJar {
 	manifest.attributes 'Main-Class': tasks.jmh.main
+	append 'META-INF/BenchmarkList'
+	append 'META-INF/CompilerHints'
 }
 
 dependencies {
